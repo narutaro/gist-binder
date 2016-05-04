@@ -36,23 +36,19 @@
 
     <div class="container">
       <!-- Example row of columns -->
-			<% @gists.each_slice(3) do |row| %>
 
       <div class="row">
 
-				<% row.each do |col| %>
 
         <div class="col-md-4">
-					<p><span class="label label-default"><%= col[:date]%></span></p>
-          <h2><%= col[:title]%></h2>
-          <p><%= col[:desc]%><a class="btn btn-xs" href="<%= col[:url]%>" role="button">Read more &raquo;</a></p>
+					<p><span class="label label-default">2016-03-05 21:25:33 </span></p>
+          <h2>Comparing NetFlow generators</h2>
+          <p>Comparing NetFlow generators<a class="btn btn-xs" href="https://gist.github.com/1c96b189f6c2b171ed62" role="button">Read more &raquo;</a></p>
         </div>
 
-				<% end %>
 
       </div><br>
 
-			<% end %>
 
       <hr>
 
