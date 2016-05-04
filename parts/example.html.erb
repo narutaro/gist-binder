@@ -1,0 +1,10 @@
+<h1><%= @title %></h1>
+<% @items.each_cons(3) do |item| %>
+	<% item.each do |i| %>
+		<dev>
+			<p><%= i[:date] %></p>
+			<p><%= i[:title] %></p>
+			<p><%= i[:desc] %></p>
+		</dev>
+	<% end %>
+<% end %>
